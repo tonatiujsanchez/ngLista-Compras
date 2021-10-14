@@ -1,0 +1,30 @@
+<h2 class="subtitle">{{tituloLista}}</h2>
+<div *ngIf="listadoCompras.length <= 0" class="sin-compras">
+    <h2>No tienes ninguna compra {{ tituloLista }}</h2>
+</div>
+
+<div *ngFor="let compra of listadoCompras; let idx = index" 
+    class="compra completada"
+    [ngClass]="{'completada': compra.comprado}">
+
+    <h3>{{ compra.producto }}</h3>
+
+    <div class="btn">
+        <i *ngIf="!compra.comprado" 
+            class="far fa-check-square pendiente"
+            (click)="mover( compra, idx )"></i>
+
+        <i *ngIf="compra.comprado" 
+            class="fas fa-check-square comprado"
+            (click)="mover( compra, idx )"></i>
+    </div>
+
+    <div class="btn">
+        <i class="fas fa-trash-alt eliminar"
+            (click)="eliminar(idx)"></i>
+    </div>
+
+    <p>Categoria: <span>{{ compra.categoria }}</span></p>
+    <p>Cantidad: <span>{{ compra.cantidad }}</span></p>
+</div>
+

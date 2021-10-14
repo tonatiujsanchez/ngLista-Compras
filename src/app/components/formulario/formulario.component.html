@@ -1,0 +1,32 @@
+<div class="form contenedor">
+
+    <input type="text"
+            class="nombre" 
+            placeholder="PRODUCTO" 
+            [(ngModel)]="compra.producto">    
+
+    <select name="select" class="categoria" [(ngModel)]="compra.categoria">
+        <option value="value1" selected="true" disabled>CATEGORIA</option>
+        <option value="abarrotes">Abarrotes</option>
+        <option value="carniceria">Carniceria</option>
+        <option value="comida">Comida</option>
+        <option value="panaderia">Panaderia</option>
+        <option value="farmacia">Farmacia</option>
+    </select>
+
+    <div class="contendor-cantidad">
+        <label for="cantidad"> CANTIDAD: {{ compra.cantidad }} </label>
+        <input type="range"
+            min="1" max="30"
+            value="1" 
+            step="1"
+            class="cantidad"
+            id="cantidad"
+            [(ngModel)]="compra.cantidad">
+    </div>
+
+    <div class="boton">
+        <button class="btn-principal"
+            (click)="agregarCompra()">Agregar</button>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+.subtitle{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* ================ */
+.sin-compras{
+    color: #b9b9b9;
+    margin: 40px 0;
+    font-size: 16px;
+}
+.sin-compras h2{
+    font-weight: 400;
+    text-align: center;
+}
+/* ================ */
+
+.compra{
+    border: solid 1px #e8e8e8;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+/* Estilos para las Compras completadas */
+.completada{
+    color: #646464;
+    text-decoration:line-through;
+}
+
+h3{
+    width: 80%;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.btn{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Pendiente */
+.btn .pendiente:active{
+    color: #00be10;
+}
+
+/* Comprado */
+.btn .comprado{
+    color: #00be10;
+}
+.btn .comprado:active{
+    color: #be0000;
+}
+
+/* Eliminar */
+.btn .eliminar{
+    color: #9b0000;
+    font-size: 18px;
+}
+.btn .eliminar:active{
+    color: #ec0404;
+}
+
+p span{
+    font-weight: 600;
+}
+

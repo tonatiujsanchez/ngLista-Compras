@@ -1,0 +1,36 @@
+.form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px;
+    border: solid 1px #e8e8e8;
+}
+.nombre{
+    width: 70%;
+    outline: none;
+    border: none;
+    border-bottom: 1px #CECECE solid;
+    padding: 15px 15px 0 10px;
+    font-size: 18px;
+}
+.categoria{
+    width: 25%;
+    border: solid 1px #CECECE;
+    padding: 0 10px;
+    text-transform: uppercase;
+    outline: none;
+}
+.contendor-cantidad{
+    width: 100%;
+    margin-top: 30px;
+}
+.cantidad{
+    width: 100%;
+    margin: 0;
+    margin-top: 5px;
+}
+.boton{
+    width: 100%;
+    margin-top: 20px;
+    text-align: right;
+}
